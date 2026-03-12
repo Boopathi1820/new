@@ -1,0 +1,18 @@
+# Update packages
+sudo apt update
+
+# Install Ansible
+sudo apt install ansible -y
+
+# Install Python AWS libraries
+pip3 install boto boto3
+
+# Install AWS collection for Ansible
+ansible-galaxy collection install amazon.aws
+
+# Configure AWS credentials
+aws configure
+
+# Run an Ansible playbook
+ansible-playbook playbook.yml
+
